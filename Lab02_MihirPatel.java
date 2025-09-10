@@ -33,14 +33,15 @@ public class Lab02_MihirPatel extends Application{
         BorderPane root = new BorderPane();
         Scene scene = new Scene(root, 250, 300);
         
-        StackPane middle = new StackPane(lblimage);
+        StackPane middle = new StackPane();
         Label top = new Label("Random Game");
         Label bottom = new Label("Waiting..");
         Label lblimage = new Label();
         
         root.setTop(top);
         root.setBottom(bottom);
-        middle.(lblimage);
+        middle.getChildren().add(lblimage);
+        root.setCenter(middle);
         
         primaryStage.setScene(scene);
         primaryStage.show();   
